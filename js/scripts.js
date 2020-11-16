@@ -20,12 +20,12 @@ function newItem() {
 	});
 	
 	// 3a. Adds the delete button:
-	let deleteButton = $('<deleteButton>x</deleteButton');
+	let deleteButton = $('<deleteButton></deleteButton>');
 	deleteButton.append(document.createTextNode("X"));
 	li.append(deleteButton);
 	
 	// 3b. Adds "delete" class to remove item upon clicking X:
-	deleteButton.on('click', deleteListItem();
+	deleteButton.on('click', deleteListItem);
 	function deleteListItem() {
 		li.addClass('delete')
 	}
